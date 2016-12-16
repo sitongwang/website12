@@ -8,10 +8,12 @@ session_start();
 <head>
 <title>DEADMAU5</title>
 
+ 
 
  <link rel="stylesheet" type="text/css" href="css/artists.css">
  <link rel="stylesheet" type="text/css" href="css/footer.css">
  <link rel="stylesheet" type="text/css" href="css/header.css">
+ <link rel="stylesheet" type="text/css" href="css/playlist.css">
 
     
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
