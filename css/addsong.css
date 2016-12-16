@@ -74,7 +74,7 @@ body{
     color: black;
     text-align: center;
     font-size: 18px;
-    border: 2px solid black;
+    border: 2px solid white;
 
   }
   table td{
@@ -84,7 +84,7 @@ body{
 
   table, th, td
   {
-  border: 3px solid black;
+  border: 3px solid white;
   border-collapse:collapse;
   }
 
@@ -214,6 +214,13 @@ form #genre{
 .displayField3{
   width: 200px;
 }
-
+#displayTable th {
+    margin-top: 30px;
+   background-color:white;
+   color:black;
+   height: 50px;
+   font-size: 20px;
+   font-family:OpenSans-Regular,Arial;  
+  }
 
 

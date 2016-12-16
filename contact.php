@@ -5,6 +5,8 @@
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script> 
     $(function(){

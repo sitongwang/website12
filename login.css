@@ -1,24 +1,50 @@
-*{
-		margin: 0px;
-		padding: 0px;
-		position: relative;
-	}
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+    }
+body {
+    background-color: #fff;
+    color: #777;
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
 
 
+h1 {
+    font-family: 'Crete Round', serif;
+    font-weight: bold;
+    color: #444;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a:hover {
+    color: #36D7B7;
+}
 
     .webform {
         margin-left:auto;
         margin-right:auto;
-        max-width: 600px;
+        max-width: 550px;
         background: #F7F7F7;
         padding: 25px 15px 25px 10px;
         font: 14px Georgia, "Times New Roman", Times, serif;
         color: #888;
         text-shadow: 1px 1px 1px #FFF;
         border:1px solid black;
-        margin-top: 200px;
+        margin-top: 60px;
         margin-bottom: 200px;
-        height: 450px;
+        height: 360px;
     }
     .webform h1 {
         font-size: 35px;
@@ -41,24 +67,10 @@
         margin-top: 25px;
         color:black;
     }
-    .webform input[type="text"], .webform input[type="email"] {
+    .webform input[type="text"], .webform input[type="password"] {
         border: 1px solid black;
         color: #41556A;
         height: 30px;
-        margin-bottom: 16px;
-        margin-right: 52px;
-        margin-top: 10px;
-        outline: 0 none;
-        padding: 3px 3px 3px 5px;
-        width: 60%;
-        font-size: 12px;
-        line-height:10px;
-    }
-
-    .webform input[name="message"]{
-        border: 1px solid black;
-        color: #41556A;
-        height: 80px;
         margin-bottom: 16px;
         margin-right: 52px;
         margin-top: 17px;
@@ -66,14 +78,7 @@
         padding: 3px 3px 3px 5px;
         width: 60%;
         font-size: 12px;
-        line-height:10px;
-
-    }
-
-    #message input [placeholder="Type here"]{
-
-        margin-top: -100px;
-
+        line-height:15px;
     }
 
     .webform .button {
@@ -84,7 +89,7 @@
         height: 50px;
         padding: 10px 25px 10px 25px;
         margin-top: 20px;
-        margin-left: 350px;
+        margin-left: 310px;
         color: #FFF;
         font-size: 16px;
     }
@@ -93,22 +98,27 @@
         background: #333333;
     }
     #box{
-     	display: block;
+        display: block;
         border-bottom:1px solid #E4E4E4;
         margin: -10px -15px 30px -10px;;
         color: black;
         height: 70px;
     } 
-    .r1{
-        color:black;
-    }
     
-
-    /*not work*/
-    @media screen (max-width: 600px){
-    span{ 
+     /*not work*/
+    @media screen and(max-width: 400px){
+     #box span  { 
         display: none;
+
      }
     } 
-
     
+    #defaultuser{
+        margin-top: 140px;
+        text-align: center;
+        align-content: center;
+
+    }
+
+
+
