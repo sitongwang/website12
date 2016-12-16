@@ -49,13 +49,23 @@ while($row = $result->fetch(PDO::FETCH_ASSOC)){
   $sname = $row['sname'];
   $artist = $row['artist'];
   $genre= $row['genre'];
+  $vote = $row['votes'];
   
   echo "<tr>";
-  echo "<td class='displayField1'> " .$sname . "</td><td class='displayField2'>". $artist . "</td><td class ='displayField3'>". $genre ."</td><td class ='displayField4'>".$vote . "<button id='upvote' type='button'>↑</button><button id='downvote' type='button'>↓</button></td>";
-  echo "</tr>";
+  echo "<td class='displayField1'> " .$sname . "</td><td class='displayField2'>". $artist . "</td><td class ='displayField3'>". $genre ."</td><td class ='displayField4'>".$vote . "<form action='' method='post'><input type='submit' name='up' value='↑'/>
+  <input type='submit' name='down' value='↓'/></form></td>";
+
+// if (isset($_POST['up'])) {
+
+  
+
+// }
+
 }
 
   echo "</table>";
+
+
 
 
 ?>
