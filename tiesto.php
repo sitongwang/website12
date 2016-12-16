@@ -8,24 +8,25 @@ session_start();
 <head>
 <title>TIESTO</title>
 
- <link rel="stylesheet" type="text/css" href="css/playlist.css">
+ <link rel="stylesheet" type="text/css" href="css/artists.css">
+ <link rel="stylesheet" type="text/css" href="css/footer.css">
+ <link rel="stylesheet" type="text/css" href="css/header.css">
+
+    
+    <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#footer").load("footer.html"); 
+    });
+    </script>
 
 </head>
 <body>
 
-<header>
-
-<h1>DJ This.<span class="color">.</span>
-    <img src="DJT_logo.png"></h1>
-    <nav>
-      <ul>
-        <li><a href="landingpage.html">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="choose_artist.html">Artists</a></li>
-        <li><a href="../login.php">Log In</a></li>
-      </ul>
-    </nav>
-</header>
+<div id ="header"></div>
 
 <div id="a">
 
@@ -51,8 +52,6 @@ while($row = $result->fetch(PDO::FETCH_ASSOC)){
   
   echo "<tr>";
   echo "<td class='displayField1'> " .$sname . "</td><td class='displayField2'>". $artist . "</td><td class ='displayField3'>". $genre ."</td><td class ='displayField4'>".$vote . "<button id='upvote' type='button'>↑</button><button id='downvote' type='button'>↓</button></td>";
-
-
   echo "</tr>";
 }
 
@@ -60,23 +59,7 @@ while($row = $result->fetch(PDO::FETCH_ASSOC)){
 
 
 ?>
-<footer>
-<div id="logo"><img id="logo" src="assets/DJT_logo.png"></div>
-<div id="link">
-  <div id="link1" ><h4>ABOUT</h4></div>
-  <div id="link2" ><h4>CONTACT US</h4></div>
-  <div id="link3"><h4>TERM&CONDITIONS</h4></div>
-  <div id="link4"><h4>PRIVACY</h4></div>
-</div>
-<div id="p"><p>@Design by Ali, Paul and Christy.</p></div>
-
-  <div class="iconrow"> 
-  <div class='icon-div'><img src="assets/facebook.png" class="icon"></div>
-  <div class='icon-div'><img src="assets/twitter.png" class="icon"></div>
-  <div class='icon-div'><img src="assets/youtube.png" class="icon"></div>
-  <div class='icon-div'><img src="assets/instagram.png" class="icon"></div>
- </div>
-</footer>
+<div id="footer"></div>
 </div>
 
 </body>
