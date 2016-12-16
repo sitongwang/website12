@@ -1,0 +1,426 @@
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+
+body {
+	background-color: #fff;
+	color: #777;
+	font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+
+img {
+	width: 100px;
+	height: 60px;
+}
+
+h1 {
+	font-family: 'Crete Round', serif;
+	font-weight: bold;
+	color: #444;
+	font-size: 45px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-weight: 300;
+	color: #ECF0F1;
+	font-size: 55px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-weight: 300;
+	color: #36D7B7;
+	font-size: 55px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+h4 {
+	font-size: 24px;
+	color: #444;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+a {
+	text-decoration: none;
+	color: #444;
+}
+
+strong {
+	font-weight: bold;
+}
+
+a:hover {
+	color: #36D7B7;
+}
+
+header {
+	height: 120px;
+}
+
+header h1 {
+	float: left;
+	margin-top: 32px;
+}
+
+header h1 .color {
+	color: #36D7B7;
+}
+
+header nav {
+	float: right;
+}
+
+header nav ul li {
+	float: left;
+	display: inline-block;
+	margin-top: 50px;
+}
+
+header nav ul li a {
+	color: #444;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block;
+	margin-right: 20px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 940px;
+}
+
+
+#hero-image h2 {
+	margin: 180px 0 40px 0;
+	float: flex;
+}
+
+#hero-image h3 {
+	margin: 10px 0 40px 0;
+	float: flex;
+}
+
+.button-1 {
+	display: block;
+	text-align: center;
+	background: #444;
+	border-radius: 3px;
+	color: #fff;
+	width: 180px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 50px;
+	margin: 0 auto;
+
+}
+
+.button-1:hover {
+	background-color: #36D7B7;
+	color: #fff;
+}
+
+
+
+#hero-image {
+	height:580px;
+	padding-top: 2px;
+	background: #e8eced url('assets/hero-image.jpg') no-repeat center;
+}
+
+#features ul li.Feature-1 {
+	background: url('assets/DJT_logo.png') no-repeat top center;
+	background-size: 80px;
+}
+
+#features ul li.Feature-2 {
+	background: url('assets/ticket.png') no-repeat top center;
+	background-size: 80px;
+
+}
+#features ul li.Feature-3 {
+	background: url('assets/sound.png') no-repeat top center;
+	background-size: 80px;
+
+}
+
+
+
+.Features-1 {
+	margin: 80px 0;
+}
+
+#features ul li {
+	width: 300px;
+	padding-top: 100px;
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+	flex-wrap: wrap;
+	display:;
+
+}
+
+.pricing {
+
+	display: flex;
+	position: relative;
+	top: 60px;
+	bottom: 60px;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: 0 0 7em;
+	padding: 50px, 50px, 50px;
+
+}
+
+.pricing-item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	text-align: center;
+	flex: 0 1 330px;
+}
+
+.pricing-feature-list {
+	text-align: left;
+}
+
+.pricing-action {
+	color: inherit;
+	border: none;
+	background: none;
+}
+
+.pricing-action:focus {
+	outline: none;
+}
+
+.pricing .pricing-item {
+	margin: 1.5em;
+	padding: 2em;
+	cursor: default;
+	border-radius: 10px;
+	background: white;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.05), 0 15px 30px -10px rgba(0,0,0,0.3);
+	transition: background 0.3s;
+}
+
+.pricing .pricing-item:hover {
+	background: #ECECEC;
+}
+
+.pricing .pricing-title {
+	font-size: 2em;
+	width: 100%;
+	margin: 0 0 0.25em;
+	padding: 0 0 0.5em;
+	border-bottom: 3px solid rgb(27, 26, 28);
+}
+
+.pricing .pricing-price {
+	color: #36D7B7;
+	font-size: 1.75em;
+	padding: 1em 0 0.75em;
+}
+
+.pricing .pricing-sentence {
+	font-weight: bold;
+}
+
+.pricing .pricing-feature-list {
+	margin: 0;
+	padding: 1em 1.25em 2em;
+}
+
+.pricing .pricing-action {
+	font-weight: bold;
+	margin-top: auto;
+	padding: 0.75em 2em;
+	border-radius: 5px;
+	background: #36D7B7;
+	transition: background 0.3s;
+}
+
+.pricing .pricing-action:hover,
+.pricing .pricing-action:focus {
+	background: #DADFE1;
+}
+
+@media screen and (min-width: 50em) {
+  a.button-1{
+    width: calc(25% - 6px);
+  }
+  
+  a.button-1:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+  
+  a.button-1:nth-of-type(4n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1300px){
+  h2, h3{
+    font-size: 200%;
+    display: center;
+  }
+  #wrapper {
+  	display: center;
+  }
+}
+@media screen and (max-width: 800px){
+  h2, h3, #hero-image{
+    font-size:150%;
+    display: center;
+  }
+   #wrapper {
+  	display: center;
+  }
+}
+@media screen and (max-width: 600px){
+  h2, h3, #hero-image{
+    font-size:100%;
+    display: center;
+  }
+   #wrapper {
+  	display: center;
+  }
+
+}
+@media screen and (max-device-width: 300px){
+  h2, h3, #hero-image{
+    font-size:40%;
+    display:center;
+  clear:both;  }
+   #wrapper {
+  	display: center;
+  }
+
+}
+
+
+footer {
+	padding: 40px 0;
+	background-color: #ddd;
+}
+
+#footer-info {
+	width: 290px;
+	float: left;
+	margin-top: 10px;
+}
+
+#footer-links {
+	width: 520px;
+	float: right;
+	margin-top: -40px;
+	padding-bottom: 2em;
+}
+
+#footer-links ul {
+	width: 380px;
+	float: left;
+	margin-left: 200px;
+}
+
+#footer-links ul li {
+	margin: 10px 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+}
+
+.wrapper {
+  padding: 120px 0 0;
+  text-align: center;
+}
+
+.social {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  line-height: 50px;
+  font-family: Entypo;
+  font-size: 28px;
+  text-align: center;
+  color: #555;
+  border-radius: 10px;
+  background: #eee;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.social {
+  box-shadow: rgb(210, 210, 210) 1px 1px,
+    rgb(210, 210, 210) 2px 2px,
+    rgb(211, 211, 211) 3px 3px,
+    rgb(211, 211, 211) 4px 4px,
+    rgb(211, 211, 211) 5px 5px,
+    rgb(212, 212, 212) 6px 6px,
+    rgb(212, 212, 212) 7px 7px,
+    rgb(212, 212, 212) 8px 8px,
+    rgb(213, 213, 213) 9px 9px,
+    rgb(213, 213, 213) 10px 10px,
+    rgb(214, 214, 214) 11px 11px,
+    rgb(214, 214, 214) 12px 12px,
+    rgb(214, 214, 214) 13px 13px,
+    rgb(215, 215, 215) 14px 14px,
+    rgb(215, 215, 215) 15px 15px,
+    rgb(215, 215, 215) 16px 16px,
+    rgb(216, 216, 216) 17px 17px,
+    rgb(216, 216, 216) 18px 18px,
+    rgb(216, 216, 216) 19px 19px,
+    rgb(217, 217, 217) 20px 20px,
+    rgb(217, 217, 217) 21px 21px,
+    rgb(218, 218, 218) 22px 22px,
+    rgb(218, 218, 218) 23px 23px,
+    rgb(218, 218, 218) 24px 24px,
+    rgb(219, 219, 219) 25px 25px,
+    rgb(219, 219, 219) 26px 26px,
+    rgb(219, 219, 219) 27px 27px,
+    rgb(220, 220, 220) 28px 28px,
+    rgb(220, 220, 220) 29px 29px,
+    rgb(221, 221, 221) 30px 30px;
+   text-shadow: rgb(226, 226, 226) 1px 1px,
+    rgb(227, 227, 227) 2px 2px,
+    rgb(227, 227, 227) 3px 3px,
+    rgb(228, 228, 228) 4px 4px,
+    rgb(229, 229, 229) 5px 5px,
+    rgb(229, 229, 229) 6px 6px,
+    rgb(230, 230, 230) 7px 7px,
+    rgb(230, 230, 230) 8px 8px,
+    rgb(231, 231, 231) 9px 9px,
+    rgb(232, 232, 232) 10px 10px,
+    rgb(232, 232, 232) 11px 11px,
+    rgb(233, 233, 233) 12px 12px,
+    rgb(233, 233, 233) 13px 13px,
+    rgb(234, 234, 234) 14px 14px,
+    rgb(235, 235, 235) 15px 15px,
+    rgb(235, 235, 235) 16px 16px,
+    rgb(236, 236, 236) 17px 17px,
+    rgb(236, 236, 236) 18px 18px,
+    rgb(237, 237, 237) 19px 19px,
+    rgb(238, 238, 238) 20px 20px;
+}
+
+
+
+
+

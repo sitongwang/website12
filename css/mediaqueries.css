@@ -1,0 +1,7 @@
+@media (max-width: 600px) {
+  #add, a, #cover, h3 {
+  justify-content: center;
+  background-size: cover;
+  
+
+  }

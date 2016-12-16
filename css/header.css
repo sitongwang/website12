@@ -1,0 +1,89 @@
+img {
+	width: 100px;
+	height: 60px;
+}
+
+h1 {
+	font-family: 'Crete Round', serif;
+	font-weight: bold;
+	color: #444;
+	font-size: 45px;
+	margin-bottom: 20px;
+}
+
+h4 {
+	font-size: 24px;
+	color: #444;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+
+body {
+	background-color: #fff;
+	color: #777;
+	font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #444;
+}
+
+strong {
+	font-weight: bold;
+}
+
+a:hover {
+	color: #36D7B7;
+}
+
+header {
+	height: 120px;
+}
+
+header h1 {
+	float: left;
+	margin-top: 32px;
+}
+
+header h1 .color {
+	color: #36D7B7;
+}
+
+header nav {
+	float: right;
+}
+
+header nav ul li {
+	float: left;
+	display: inline-block;
+	margin-top: 50px;
+}
+
+header nav ul li a {
+	color: #444;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block;
+	margin-right: 20px;
+}
+h1 {
+	font-family: 'Crete Round', serif;
+	font-weight: bold;
+	color: #444;
+	font-size: 45px;
+	margin-bottom: 20px;
+}
+h4 {
+	font-size: 24px;
+	color: #444;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+*{
+		margin: 0px;
+		padding: 0px;
+		position: relative;
+	}

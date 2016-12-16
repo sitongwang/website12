@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>choose artist</title>
+<link rel="stylesheet" type="text/css" href="css/choose_artist.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#footer").load("footer.html"); 
+    });
+    </script>
+<style type="text/css">
+	#b1{
+		width: 350px;
+		height:450px;
+		display: block;
+		float: left;
+		margin-left: 250px;
+		margin-top:150px;
+	    background-image: url(assets/artist1.jpg);
+	    background-size:350px 450px;
+        background-repeat:no-repeat;
+        z-index: 2;
+	}
+	#b2{
+		width: 350px;
+		height:450px;
+		margin-right:250px;
+		margin-top:190px; 
+		float: right;
+		background-image: url(assets/artist2.jpg);
+		background-size:350px 450px;
+        background-repeat:no-repeat;
+        z-index: 2;	
+	}
+
+   
+
+</style>
+</head>
+<body>
+	<div id ="header"></div>
+
+<div id="b">
+    <div><h1>CHOOSE ARTISTS</h1></div>
+	
+	<div>
+		<a id="b1" href="tiesto.php"></a>
+		<div id="artist1"><h3>tiesto</h3></div>
+	</div>
+	
+	<div>
+	    <a id="b2" href="deadmau5.php"></a>
+		<div id="artist2"><h3>deadmau5</h3></div>
+	</div>
+
+</div>
+
+<div id="footer"></div>
+
+</body>
+</html>

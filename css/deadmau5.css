@@ -1,0 +1,270 @@
+
+
+body{
+    background-color:black;
+    background-image: url("assets/header1.jpg");
+
+  }
+  
+  #a{
+    width:100%;
+    margin-top:0px;
+    z-index: 10;
+  } 
+  
+
+  #n2{
+    width: 100%;
+    height: 700px;
+    
+  }
+  
+  
+
+
+  table {
+    background-color:#11efba;
+    margin: auto;
+    margin-top:0px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid black;
+
+  }
+  table td{
+    width: 100px;
+    height: 60px;
+  }
+
+  table, th, td
+  {
+  border: 3px solid black;
+  border-collapse:collapse;
+  }
+
+
+#form{
+  width: 100%;
+  margin-top:0px;
+}
+
+#form h3{
+	font-size: 78px;
+	color: #11efba;
+  position: absolute;
+  margin:0 auto;
+  text-align: center;
+  font-family:sans-serif;
+  top:170px;
+  right:400px;
+
+}
+
+
+#b{
+  width: 100%;
+  height: 100px;
+  margin-top:0px;
+}
+
+form #sname{
+  height: 30px;
+  width: 200px;
+  border: 2px solid #11efba;
+  border-radius: 1px;
+  outline: none;
+  background: white;
+  color: #11efba;
+  font-size: 18px;
+  flex: right;
+}
+form #artist{
+   height: 30px;
+   width: 200px;
+   border: 2px solid #11efba;
+   border-radius: 1px;
+   outline: none;
+   background: white;
+   color: #9d2933;
+   font-size: 18px;
+   margin-left: 10px;
+   flex: right;
+
+}
+form #genre{
+    height: 30px;
+    width: 150px;
+    border: 2px solid #11efba;
+    border-radius: 1px;
+    outline: none;
+    background: white;
+    color: #9d2933;
+    font-size: 18px;
+    margin:10px;
+     flex: right;
+  
+}
+
+
+#btnSubmit{
+    height: 30px;
+    width: 160px;
+    border: 2px solid #11efba;
+    border-radius: 1px;
+    background: #11efba;
+    color: black;
+    font-size: 18px;
+    margin: auto;
+    flex:right;
+    margin-left:0px;
+
+    
+}
+
+#add{
+  width: 800px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 420px;
+  margin-left: 290px;
+  position: absolute;
+  z-index: 99;
+
+}
+#add input{
+  height: 30px;
+  width: 150px;
+  flex:right;
+  z-index: 99;
+}
+
+   #cover{
+   width: 100%;
+   height: 600px;
+   margin-top:0px;
+   z-index: 1;
+  }  
+
+.displayField1{
+   width: 300px;
+
+ } 
+
+.displayField2{
+   width: 250px;
+
+ }
+
+.displayField3{
+  width: 200px;
+}
+  /*footer*/
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color:white;
+    border: 2px  solid;
+    margin-top:200px; 
+  }
+#logo{
+  width: 110px;
+  height: 65px;
+    margin: 0 auto;
+    object-position: center;
+    margin-top:35px; 
+}
+
+#p {
+  margin-top:-20px;
+  color: black;
+  position: relative;
+  margin-left:50px;
+}
+
+#link{
+  width: 450px;
+  color: black;
+  margin: 0 auto;
+    object-position: center;
+  display: flex;
+  font-size: 14px;
+  margin-top: 100px;
+  font-family: OpenSans-Regular,Arial;
+}
+
+#link1 {
+    margin-top:10px;
+  color: black;
+  position: relative;
+  flex:left;
+  margin-left: 25px;
+  
+}
+
+#link2{
+  margin-top:10px;
+  color: black;
+  position: relative;
+  flex:left;
+  margin-left: 25px;
+}
+
+#link3{
+  margin-top:10px;
+  margin-left: 
+  color: black;
+  position: relative;
+  flex:left;
+  margin-left: 25px;
+}
+
+#link4{
+  margin-top:10px;
+  margin-left: 
+  color: black;
+  position: relative;
+  flex:left;
+  margin-left: 25px;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    display:block;
+}
+
+.iconrow{
+  float: right;
+  display: flex;
+  flex-direction:column;
+  width: 50px;
+  height: 100px;
+  margin-right: 30px;
+  margin-top: -200px; 
+}
+
+.icon-div {
+    margin-top: 0px;
+    margin-right: 30px;
+    float: right;
+    width:30px;
+    height: 30px;
+    display: inline-block;
+    padding: 0px;
+    display:block;
+    margin-bottom:15px;
+  }
+
+
+  #displayTable th {
+    margin-top: 30px;
+   background-color:black;
+   color:white;
+   height: 50px;
+   font-size: 20px;
+   font-family:OpenSans-Regular,Arial;  
+  }
