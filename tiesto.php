@@ -50,7 +50,16 @@ while($row = $result->fetch(PDO::FETCH_ASSOC)){
   $genre= $row['genre'];
   
   echo "<tr>";
-  echo "<td class='displayField1'> " .$sname . "</td><td class='displayField2'>". $artist . "</td><td class ='displayField3'>". $genre ."</td><td class ='displayField4'>".$vote . "<button id='upvote' type='button'>↑</button><button id='downvote' type='button'>↓</button></td>";
+  echo "<td class='displayField1'> " .$sname . "</td><td class='displayField2'>". $artist . "</td><td class ='displayField3'>". $genre ."</td><td class ='displayField4'>".$vote . "<form action='' method='post'>
+  <input type='submit' name='up' value='↑'/>
+  <input type='submit' name='down' value='↓'/>
+</form></td>";
+
+// if (isset($_POST['up'])) {
+
+  
+
+// }
 
 
   echo "</tr>";
