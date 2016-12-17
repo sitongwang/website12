@@ -26,15 +26,14 @@ session_start();
 </head>
 <body>
 
+<!-- header menu -->
 <div id ="header"></div>
 
-<div id="a">
 
-<div id="form"><h3>TIESTO</h3></div>
+<div id="headerontop">
 
-<img id="cover" src="assets/header1.jpg">
-</div>
-<div id="b">
+<h3>TIESTO</h3>
+
 
 <?php
 // create a PDO (PHP Data Object)
@@ -69,6 +68,7 @@ while($row = $result->fetch(PDO::FETCH_ASSOC)){
 
 
 ?>
+
 <div id="footer"></div>
 </div>
 
