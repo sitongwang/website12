@@ -7,9 +7,6 @@
     
   }
   
-  
-
-
   table {
     background-color:#11efba;
     margin: auto;
@@ -40,9 +37,41 @@
 #headerontop h3{
   color: #11efba;
   text-align: center;
-  font-size: 20em;
+  font-size: 15em;
   opacity: 0.8;
 }
+
+@media all and (max-width: 60em) {
+  
+  #headerontop h3{
+  color: #11efba;
+  text-align: center;
+  font-size: 8em;
+  opacity: 0.8;
+  }
+
+}
+@media all and (max-width: 45em) {
+  
+  #headerontop h3{
+  color: #11efba;
+  text-align: center;
+  font-size: 6em;
+  opacity: 0.8;
+  }
+
+}
+@media all and (max-width: 30em) {
+  
+  #headerontop h3{
+  color: #11efba;
+  text-align: center;
+  font-size: 4em;
+  opacity: 0.8;
+  }
+
+}
+
 
 #headerontop {
     background-image: url(assets/header1.jpg);
