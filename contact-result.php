@@ -142,7 +142,7 @@ footer{
 <br>
 <?php
 
-$db = new PDO("mysql:host=localhost;dbname=DjT","root","root");
+$db = new PDO('mysql:host=localhost:3306 ;dbname=spryp_DjT; charset=utf8', 'spryp_spryp', '565656spry!1');
 
 if( isset($_GET['namecf']) && $_GET['namecf'] != "" ) {
     $sql = "INSERT INTO `contact_form` (namecf,emailcf,messagecf) VALUES ( :namecf,:emailcf,:messagecf);";

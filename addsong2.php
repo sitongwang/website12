@@ -2,7 +2,7 @@
 
 	$db_username ='root';
 	$db_password = 'root';
-	$db = new PDO('mysql:host=localhost;dbname=DjT; charset=utf8', 'root', 'root');
+	$db = new PDO('mysql:host=localhost:3306 ;dbname=spryp_DjT; charset=utf8', 'spryp_spryp', '565656spry!1');
 	//$db = new PDO('mysql:host=localhost:3306;dbname=shoepedia', $db_username, $db_password);
 
 

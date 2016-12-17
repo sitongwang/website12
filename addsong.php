@@ -32,11 +32,14 @@ session_start();
 <!DOCTYPE html>
 <html lang="zh">
 <head>
+<wrapper>
 <title>Add song</title>
- <link rel="stylesheet" type="text/css" href="css/addsong.css">
-    <link rel="stylesheet" type="text/css" href="css/mediaqueries">
+    <link rel="stylesheet" type="text/css" href="css/addsong.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
+      <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 
     <script> 
@@ -82,7 +85,7 @@ session_start();
 <?php
 // create a PDO (PHP Data Object)
 // specifies the db type, host, db name, character set, username and password
-$db = new PDO('mysql:host=localhost;dbname=DjT; charset=utf8', 'root', 'root');
+$db = new PDO('mysql:host=localhost:3306 ;dbname=spryp_DjT; charset=utf8', 'spryp_spryp', '565656spry!1');
 
 echo "<table name= 'displayTable' id='displayTable' border='1' cellspacing='5'> ";
 echo "<tr><th>SongName</th><th>Artist</th><th>Genre</th></tr>";
@@ -105,6 +108,7 @@ while($row = $result->fetch(PDO::FETCH_ASSOC)){
 
 ?>
 </div>
+</wapper>
 
 <div id="footer"></div>
 </body>

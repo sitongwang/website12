@@ -42,7 +42,7 @@ session_start();
 <?php
 // create a PDO (PHP Data Object)
 // specifies the db type, host, db name, character set, username and password
-$db = new PDO('mysql:host=localhost;dbname=DjT; charset=utf8', 'root', 'root');
+$db = new PDO('mysql:host=localhost:3306 ;dbname=spryp_DjT; charset=utf8', 'spryp_spryp', '565656spry!1');
 echo "<table name= 'displayTable' id='displayTable' border='1' cellspacing='10' background-color='black' color='white'> ";
 echo "<tr><th>SONG NAME</th><th>ARTIST</th><th>GENRE</th><th>VOTE</th></tr>";
 $result = $db->prepare("SELECT * FROM songs WHERE artist LIKE '%tiesto%' ORDER BY votes DESC");

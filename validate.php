@@ -9,7 +9,7 @@ $dbuser     = "root";
 $dbpass     = "root";
 
 // database connection
-$conn = new PDO("mysql:host=$dbhost;dbname=$dbname",$dbuser,$dbpass);
+$db = new PDO('mysql:host=localhost:3306 ;dbname=spryp_DjT; charset=utf8', 'spryp_spryp', '565656spry!1');
 
 // new data
 

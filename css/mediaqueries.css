@@ -1,7 +1,38 @@
-@media (max-width: 600px) {
-  #add, a, #cover, h3 {
-  justify-content: center;
-  background-size: cover;
-  
-
+@media screen and (max-width: 1300px){
+  h2, h3, #form{
+    font-size: 200%;
+    display: center;
   }
+  #wrapper {
+    display: block;
+  }
+}
+@media screen and (max-width: 800px){
+  h2, h3, #hero-image,  #form{
+    font-size:150%;
+    display: center;
+  }
+   #wrapper {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px){
+  h2, h3, #hero-image, #form{
+    font-size:100%;
+    display: center;
+  }
+   #wrapper {
+    display: center;
+  }
+
+}
+@media screen and (max-device-width: 300px){
+  h2, h3, #hero-image, #form{
+    font-size:40%;
+    display:center;
+  clear:both;  }
+   #wrapper {
+    display: center;
+  }
+
+}

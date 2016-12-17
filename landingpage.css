@@ -63,10 +63,12 @@ h3 {
 }
 
 
+
+
 .wrapper {
 	margin: 0 auto;
 	padding: 0 10px;
-	width: 940px;
+	width: 100%;
 }
 
 
@@ -106,23 +108,30 @@ h3 {
 	height:580px;
 	padding-top: 2px;
 	background: #e8eced url('assets/hero-image.jpg') no-repeat center;
+
 }
 
 #features ul li.Feature-1 {
 	background: url('assets/Dj.png') no-repeat top center;
 	background-size: 80px;
+
 }
 
 #features ul li.Feature-2 {
 	background: url('assets/ticket.png') no-repeat top center;
 	background-size: 80px;
 
+
 }
 #features ul li.Feature-3 {
 	background: url('assets/sound.png') no-repeat top center;
 	background-size: 80px;
 
+
 }
+
+
+
 
 
 
@@ -132,13 +141,10 @@ h3 {
 }
 
 #features ul li {
-	width: 300px;
 	padding-top: 100px;
-	float: left;
 	margin-right: 10px;
 	text-align: center;
 	flex-wrap: wrap;
-	display:;
 
 }
 
@@ -255,7 +261,7 @@ h3 {
     display: center;
   }
   #wrapper {
-  	display: center;
+  	display: block;
   }
 }
 @media screen and (max-width: 800px){
@@ -264,7 +270,7 @@ h3 {
     display: center;
   }
    #wrapper {
-  	display: center;
+  	display: block;
   }
 }
 @media screen and (max-width: 600px){
