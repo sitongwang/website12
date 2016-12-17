@@ -13,7 +13,6 @@ session_start();
  <link rel="stylesheet" type="text/css" href="css/artists.css">
  <link rel="stylesheet" type="text/css" href="css/footer.css">
  <link rel="stylesheet" type="text/css" href="css/header.css">
- <link rel="stylesheet" type="text/css" href="css/playlist.css">
 
     
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
@@ -28,16 +27,10 @@ session_start();
 
 </head>
 <body>
+<div id="header"></div>
+<div id="headerontop">
 
-<div id ="header"></div>
-
-<div id="a">
-
-<div id="form"><h3>DEADMAU5</h3></div>
-
-<img id="cover" src="assets/header1.jpg">
-</div>
-<div id="b">
+<h3>DEADMAU5</h3>
 
 <?php
 // create a PDO (PHP Data Object)
@@ -47,22 +40,28 @@ echo "<table name= 'displayTable' id='displayTable' border='1' cellspacing='10' 
 echo "<tr><th>SONG NAME</th><th>ARTIST</th><th>GENRE</th><th>VOTE</th></tr>";
 $result = $db->prepare("SELECT * FROM songs WHERE artist LIKE '%deadmau5%' ;");$result->execute();
 
+
 while($row = $result->fetch(PDO::FETCH_ASSOC)){
   $sname = $row['sname'];
   $artist = $row['artist'];
   $genre= $row['genre'];
+  $vote = $row['votes'];
   
   echo "<tr>";
-  echo "<td class='displayField1'> " .$sname . "</td><td class='displayField2'>". $artist . "</td><td class ='displayField3'>". $genre ."</td>";
-  echo "</tr>";
-}
+  echo "<td class='displayField1'> " .$sname . "</td><td class='displayField2'>". $artist . "</td><td class ='displayField3'>". $genre ."</td><td class ='displayField4'>".$vote . "<form action='' method='post'><input type='submit' name='up' value='↑'/>
+  <input type='submit' name='down' value='↓'/></form></td>";
 
-  echo "</table>";
+// if (isset($_POST['up'])) {
+
+  
+}
+echo "</table>";
 
 
 ?>
 
-</div>
+
 <div id="footer"></div>
+</div>
 </body>
 </html>
