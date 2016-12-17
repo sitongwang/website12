@@ -8,6 +8,7 @@ session_start();
 <head>
 <title>TIESTO</title>
 
+<<<<<<< Updated upstream
  <link rel="stylesheet" type="text/css" href="css/artists.css">
  <link rel="stylesheet" type="text/css" href="css/footer.css">
  <link rel="stylesheet" type="text/css" href="css/header.css">
@@ -22,6 +23,9 @@ session_start();
       $("#footer").load("footer.html"); 
     });
     </script>
+=======
+ <link rel="stylesheet" type="text/css" href="css/artist.css">
+>>>>>>> Stashed changes
 
 </head>
 <body>
