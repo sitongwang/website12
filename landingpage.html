@@ -17,6 +17,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    
     <script>
     $(function(){
       $("#header").load("header.html"); 
@@ -33,10 +34,12 @@ session_start();
 	
 	<div id="hero-image">
 
-		<div class="wrapper">
-			<h2><strong>Requesting Songs</strong><br/></h2>
-			<h3>Taken to a Whole New Level.</h3>
-			<a href="#" class="button-1">Get Started</a>
+		<div class="wrapper" >
+		    <div id="animated" class="animated fadeIn">
+			  <h2><strong>Requesting Songs</strong><br/></h2>
+			  <h3>Taken to a Whole New Level.</h3>
+			</div>
+		  <div id="animated2" class="animated2 fadeInUp"><a href="#" class="button-1">Get Started</a></div>
 		</div>
 	</div>
 
@@ -89,5 +92,7 @@ session_start();
 	</div>
 
 <div id="footer"></div>
+
+<script src = "main.js"></script>
 </body>
 </html>

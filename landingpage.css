@@ -1,3 +1,49 @@
+
+
+
+#animated{ 
+  
+}
+
+.animated { 
+    animation-duration: 2s; 
+    animation-fill-mode: both; 
+} 
+
+@keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+.fadeIn { 
+    animation-name: fadeIn; 
+}
+
+#animated2 { 
+   
+}
+
+.animated2 { 
+    animation-duration: 3s; 
+    animation-fill-mode: both; 
+ 
+} 
+
+@keyframes fadeInUp { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+.fadeInUp { 
+    animation-name: fadeInUp; 
+}
+
+
 h2 {
 	font-weight: 300;
 	color: #ECF0F1;
@@ -22,6 +68,7 @@ h3 {
 	padding: 0 10px;
 	width: 940px;
 }
+
 
 
 #hero-image h2 {
@@ -81,6 +128,7 @@ h3 {
 
 .Features-1 {
 	margin: 80px 0;
+	opacity: .7
 }
 
 #features ul li {
@@ -107,6 +155,11 @@ h3 {
 	padding: 50px, 50px, 50px;
 
 }
+
+/*#transition-pricing{
+ top: 300px;
+}*/
+
 
 .pricing-item {
 	position: relative;

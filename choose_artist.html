@@ -16,6 +16,7 @@
       $("#footer").load("footer.html"); 
     });
     </script>
+
 <style type="text/css">
 	#b1{
 		width: 350px;
@@ -41,7 +42,111 @@
         z-index: 2;	
 	}
 
-   
+   @media all and (max-width: 100%) {
+	
+    a #b1 {
+		
+		flex-direction: row;	
+	
+	}
+	.b2 {
+		
+		flex-direction: row;
+	}
+    #b {
+		
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+		justify-content: center;
+		background-color: red;
+	}
+/*@media all and (min-width: 400px) and (max-width:1000px) {
+	
+    .b1 {
+		
+		flex-direction: row;	
+	
+	}
+	.b2 {
+		
+		flex-direction: row;
+	}
+    #b {
+		
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+		justify-content: center;
+		background-color: green;
+	}*/
+	/*@media all and (max-width: 500px) {
+	
+    .b1 {
+		
+		flex-direction: row;	
+	
+	}
+	.b2 {
+		
+		flex-direction: row;
+	}
+    #b {
+		
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+		justify-content: center;
+		background-color: yellow;
+	}
+	 
+	 @media all and (max-width: 900px) {
+	
+    .b1 {
+		
+		flex-direction: row;	
+	
+	}
+	.b2 {
+		
+		flex-direction: row;
+	}
+    #b {
+		
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+		justify-content: center;
+		background-color: green;
+	}
+	
+    @media all and (min-width: 900px) and (max-width:1000px){
+	
+    .b1 {
+		
+		flex-direction: row;	
+	
+	}
+	.b2 {
+		
+		flex-direction: row;
+	}
+    #b {
+		
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: center;
+		justify-content: center;
+		background-color:pink ;
+	}
+}
+*/
+
 
 </style>
 </head>
@@ -51,12 +156,12 @@
 <div id="b">
     <div><h1>CHOOSE ARTISTS</h1></div>
 	
-	<div>
+	<div class="b1">
 		<a id="b1" href="tiesto.php"></a>
 		<div id="artist1"><h3>tiesto</h3></div>
 	</div>
 	
-	<div>
+	<div class="b2">
 	    <a id="b2" href="deadmau5.php"></a>
 		<div id="artist2"><h3>deadmau5</h3></div>
 	</div>
