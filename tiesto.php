@@ -45,7 +45,8 @@ session_start();
 $db = new PDO('mysql:host=localhost;dbname=DjT; charset=utf8', 'root', 'root');
 echo "<table name= 'displayTable' id='displayTable' border='1' cellspacing='10' background-color='black' color='white'> ";
 echo "<tr><th>SONG NAME</th><th>ARTIST</th><th>GENRE</th><th>VOTE</th></tr>";
-$result = $db->prepare("SELECT * FROM songs WHERE artist LIKE '%tiesto%' ;");
+$result = $db->prepare("SELECT * FROM songs WHERE artist LIKE '%tiesto%' ORDER BY votes DESC");
+
 $result->execute();
 
 while($row = $result->fetch(PDO::FETCH_ASSOC)){
@@ -58,15 +59,35 @@ while($row = $result->fetch(PDO::FETCH_ASSOC)){
   echo "<td class='displayField1'> " .$sname . "</td><td class='displayField2'>". $artist . "</td><td class ='displayField3'>". $genre ."</td><td class ='displayField4'>".$vote . "<form action='' method='post'><input type='submit' name='up' value='↑'/>
   <input type='submit' name='down' value='↓'/></form></td>";
 
-// if (isset($_POST['up'])) {
 
-  
-
-// }
 
 }
 
   echo "</table>";
+
+ if (isset($_POST['up'])) {
+  //$row = $result->fetch(PDO::FETCH_ASSOC)
+   //$vote = $row['votes'];
+
+      $result = $db->prepare("UPDATE songs SET votes = votes + 1 WHERE songid");
+
+      //$result->bindParam('songid', $_POST['up'], PDO::PARAM_INT);
+
+      $result->execute();
+  }
+
+   if (isset($_POST['down'])) {
+  //$row = $result->fetch(PDO::FETCH_ASSOC)
+   //$vote = $row['votes'];
+
+      $result = $db->prepare("UPDATE songs SET votes = votes - 1 WHERE songid");
+
+      //$result->bindParam('songid', $_POST['up'], PDO::PARAM_INT);
+
+      $result->execute();
+  }
+
+
 
 
 
